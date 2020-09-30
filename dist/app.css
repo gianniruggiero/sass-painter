@@ -4,7 +4,45 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  width: 1024px;
+header .wrap-header {
+  height: 600px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header .wrap-header .header-top {
+  height: 35px;
+  width: 100%;
+  background-color: #101010;
+}
+
+header .wrap-header .header-bottom {
+  height: 65px;
+  width: 100%;
+  background-color: #101010;
+}
+
+header .wrap-header .jumbo {
+  height: 500px;
+  width: 100%;
+  background-image: url(/images/jumbo_backdrop.jpg?1ae8206f62af0c936bc2844d99e7195b);
+  background-size: cover;
+}
+
+.wrap-section1 {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.wrap-section1 .sec1-header {
+  height: 100px;
+  background-color: #e6e6e6;
+  width: 100%;
+}
+
+.wrap-section1 .sec1-main {
+  background-color: #222222;
+  height: 800px;
+  width: 100%;
 }
 

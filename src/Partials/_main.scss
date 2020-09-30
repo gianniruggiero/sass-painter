@@ -1,0 +1,18 @@
+.wrap-section1 {
+
+  width: $wrap_width;
+  margin: 0 auto;
+
+  .sec1-header{
+    height: 100px;
+    background-color: $col-brand-3;
+    width: 100%;
+  }
+
+  .sec1-main {
+    background-color: $col-brand-2;
+    height: 800px;
+    width: 100%;
+  }
+
+}

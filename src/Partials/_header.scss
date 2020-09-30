@@ -1,0 +1,23 @@
+header {
+  .wrap-header {
+    height: $header_height;
+    width: $wrap_width;
+    margin: 0 auto;
+    .header-top {
+      height: $header-top-height;
+      width: 100%;
+      background-color: $col-brand-1;
+    }
+    .header-bottom{
+      height: $header-bottom-height;
+      width: 100%;
+      background-color: $col-brand-1;
+    }
+    .jumbo {
+      height: $jumbo-height;
+      width: 100%;
+      background-image:url("../img/jumbo_backdrop.jpg");
+      background-size: cover;
+    }
+  }
+}

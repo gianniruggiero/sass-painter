@@ -1,48 +1,183 @@
-body {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: #101010;
+}
+
 header .wrap-header {
-  height: 600px;
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 header .wrap-header .header-top {
-  height: 35px;
-  width: 100%;
+  height: 40px;
   background-color: #101010;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .wrap-header .header-top .navbar-top {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+header .wrap-header .header-top .navbar-top li {
+  padding-left: 30px;
+  line-height: 12px;
+}
+
+header .wrap-header .header-top .navbar-top li a {
+  color: #989898;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+header .wrap-header .header-top .navbar-top li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+header .wrap-header .header-top .navbar-top li .fas {
+  color: #009cff;
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 6px;
 }
 
 header .wrap-header .header-bottom {
-  height: 65px;
+  display: flex;
+  align-items: center;
+  height: 55px;
   width: 100%;
   background-color: #101010;
 }
 
-header .wrap-header .jumbo {
-  height: 500px;
+header .wrap-header .header-bottom .wrap-logo {
+  width: 90px;
+}
+
+header .wrap-header .header-bottom .wrap-logo .img-logo {
   width: 100%;
-  background-image: url(/images/jumbo_backdrop.jpg?1ae8206f62af0c936bc2844d99e7195b);
+}
+
+header .wrap-header .header-bottom .navbar-bottom {
+  display: flex;
+  list-style: none;
+  margin-left: 10px;
+}
+
+header .wrap-header .header-bottom .navbar-bottom li {
+  color: #fff;
+  padding: 17px 25px;
+}
+
+header .wrap-header .header-bottom .navbar-bottom li:hover {
+  background-color: #f1f1f1;
+  color: #101010;
+}
+
+header .wrap-header .header-bottom .navbar-bottom li:hover a {
+  color: #101010;
+}
+
+header .wrap-header .header-bottom .navbar-bottom li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  height: 100%;
+}
+
+header .wrap-header .header-bottom .navbar-bottom li .fa-angle-down {
+  font-size: 10px;
+  color: #989898;
+  margin-left: 4px;
+}
+
+header .jumbotron {
+  height: 460px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+header .jumbotron .wrap-jumbo {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header .jumbotron .wrap-jumbo .col-left {
+  width: 45%;
+  height: 100%;
+  background-color: lightyellow;
+  opacity: 0.5;
+}
+
+header .jumbotron .wrap-jumbo .col-right {
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 35%;
+  height: calc(100% - 20px);
+  background-color: lightgreen;
+  opacity: 0.5;
+}
+
+header .jumbotron .wrap-jumbo .col-right .btn {
+  padding: 10px 40px;
+  margin-top: 50px;
+  background-color: #009cff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .wrap-section1 {
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .wrap-section1 .sec1-header {
-  height: 100px;
+  height: 55px;
   background-color: #e6e6e6;
   width: 100%;
 }
 
 .wrap-section1 .sec1-main {
   background-color: #222222;
+  background-color: red;
   height: 800px;
   width: 100%;
+}
+
+footer .wrap-footer-top {
+  background-color: #e6e6e6;
+}
+
+footer .wrap-footer-top .footer-top {
+  height: 300px;
+}
+
+footer .wrap-footer-bottom {
+  background-color: #009cff;
+}
+
+footer .wrap-footer-bottom .footer-bottom {
+  height: 90px;
 }
 

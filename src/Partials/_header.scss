@@ -1,23 +1,116 @@
 header {
+  background-color: $col-brand-1;
   .wrap-header {
-    height: $header_height;
     width: $wrap_width;
     margin: 0 auto;
+    padding: 0 20px;
     .header-top {
       height: $header-top-height;
-      width: 100%;
+      // width: 100%;
       background-color: $col-brand-1;
+      color: $col-brand-3;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .navbar-top {
+        @include listInLine;
+        margin-right: 20px;
+        li {
+          padding-left: 30px;
+          line-height: 12px;
+          a {
+            color: #989898;
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 12px;
+            &:hover {
+              text-decoration: underline;
+              color: $col-brand-5;
+            }
+          }
+          .fas {
+            color: $col-ico-btn;
+            font-size: 12px;
+            line-height: 12px;
+            margin-right: 6px;
+          }
+        }
+      }
     }
     .header-bottom{
+      display: flex;
+      align-items: center;
       height: $header-bottom-height;
       width: 100%;
       background-color: $col-brand-1;
+      .wrap-logo {
+        width: 90px;
+        .img-logo {
+          width: 100%;
+        }
+      }
+      .navbar-bottom{
+        @include listInLine;
+        margin-left: 10px;
+        li {
+          &:hover {
+            background-color: #f1f1f1;
+            color: $col-brand-1;
+          }
+          &:hover a{
+            color: $col-brand-1;
+          }
+          color: $col-brand-5;
+          padding: 17px 25px;
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $col-brand-5;
+            height: 100%;
+          }
+          .fa-angle-down {
+            font-size: 10px;
+            color: #989898;
+            margin-left: 4px;
+          }
+        }
+      }
     }
-    .jumbo {
-      height: $jumbo-height;
-      width: 100%;
-      background-image:url("../img/jumbo_backdrop.jpg");
-      background-size: cover;
+  }
+  .jumbotron {
+    height: $jumbo-height;
+    background-image:url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    .wrap-jumbo {
+      display: flex;
+      justify-content: flex-end;
+      width: $wrap_width;
+      height: 100%;
+      margin: 0 auto;
+      .col-left {
+        width: $jumbo-col-left-w;
+        height: 100%;
+        background-color: lightyellow;
+        opacity: 0.5;
+      }
+      .col-right {
+        margin-top: 20px;
+        padding: 0 20px;
+        width: $jumbo-col-right-w;
+        height: calc(100% - 20px);
+        background-color: lightgreen;
+        opacity: 0.5;
+        .btn {
+          padding: 10px 40px;
+          margin-top: 50px;
+          background-color: $col-ico-btn;
+          color: $col-brand-5;
+          text-decoration: none;
+          font-size: 15px;
+        }
+      }
     }
   }
 }

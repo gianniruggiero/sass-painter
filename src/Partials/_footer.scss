@@ -1,0 +1,15 @@
+footer {
+  .wrap-footer-top {
+    background-color: $col-brand-3;
+    .footer-top {
+      height: $footer-top-height;
+    }
+  }
+  .wrap-footer-bottom {
+    background-color: $col-brand-4;
+    .footer-bottom {
+      height: $footer-bottom-height;
+    }
+  }
+
+}

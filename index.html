@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link rel="stylesheet" href="dist/app.css">
   <title>Sass Painter</title>
 </head>
@@ -11,9 +13,56 @@
 
   <header>
     <div class="wrap-header">
-      <div class="header-top"></div>
-      <div class="header-bottom"></div>
-      <div class="jumbotron"></div>
+      <!-- header top -->
+      <div class="header-top">
+        <nav>
+          <ul class="navbar-top">
+            <li><i class="fas fa-phone-alt"></i><a href="#">1-877-582-6735</a></li>
+            <li><i class="fas fa-comment-alt"></i><a href="#">Chat</a></li>
+            <li><i class="fas fa-user"></i><a href="#">Sign in</a></li>
+            <li><i class="fas fa-shopping-cart"></i><a href="#">Cart</a></li>
+            <li><select name="select-language" id="sel-language">
+              <option value="de">Deutsch</option>
+              <option value="en" selected="selected">English</option>
+              <option value="fr">Français</option>
+              <option value="jp">日本語</option>
+            </select></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /header top -->
+      <!-- header bottom -->
+      <div class="header-bottom">
+        <div class="wrap-logo">
+          <a href="#"><img class="img-logo"src="img/logo_painter.png" alt="logo brand"></a>
+        </div>
+        <!-- navbar header bottom -->
+        <nav>
+          <ul class="navbar-bottom">
+            <li><a href="#">Products</a><i class="fas fa-angle-down"></i></li>
+            <li><a href="#">Brushes</a><i class="fas fa-angle-down"></i></li>
+            <li><a href="#">Wacom Tablets</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Free Trials</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Support</a><i class="fas fa-angle-down"></i></li>
+            <li><a href="#">Learning</a><i class="fas fa-angle-down"></i></li>
+          </ul>
+        </nav>
+        <!-- /navbar header bottom -->
+
+      </div>
+      <!-- /header bottom -->
+    </div>
+    <div class="jumbotron">
+      <div class="wrap-jumbo">
+        <div class="col-left"></div>
+        <div class="col-right">
+          <h3>$ 49.99</h3>
+          <h5>DOWNLOAD</h5>
+          <a class="btn buynow_btn" href="#">BUY NOW</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -25,11 +74,15 @@
       </div>
     </div>
 
-
   </main>
 
   <footer>
-
+    <div class="wrap-footer-top">
+      <div class="footer-top"></div>
+    </div>
+    <div class="wrap-footer-bottom">
+      <div class="footer-bottom"></div>
+    </div>
   </footer>
 
   <script src="dist/app.js" charset="utf-8"></script>

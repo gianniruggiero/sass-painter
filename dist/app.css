@@ -11,13 +11,11 @@ body {
 header {
   background-color: #101010;
 }
-
 header .wrap-header {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 header .wrap-header .header-top {
   height: 40px;
   background-color: #101010;
@@ -26,37 +24,31 @@ header .wrap-header .header-top {
   justify-content: flex-end;
   align-items: center;
 }
-
 header .wrap-header .header-top .navbar-top {
   display: flex;
   list-style: none;
   margin-right: 20px;
 }
-
 header .wrap-header .header-top .navbar-top li {
   padding-left: 30px;
   line-height: 12px;
 }
-
 header .wrap-header .header-top .navbar-top li a {
   color: #989898;
   text-decoration: none;
   font-size: 12px;
   line-height: 12px;
 }
-
 header .wrap-header .header-top .navbar-top li a:hover {
   text-decoration: underline;
   color: #fff;
 }
-
 header .wrap-header .header-top .navbar-top li .fas {
   color: #009cff;
   font-size: 12px;
   line-height: 12px;
   margin-right: 6px;
 }
-
 header .wrap-header .header-bottom {
   display: flex;
   align-items: center;
@@ -64,100 +56,127 @@ header .wrap-header .header-bottom {
   width: 100%;
   background-color: #101010;
 }
-
 header .wrap-header .header-bottom .wrap-logo {
   width: 90px;
 }
-
 header .wrap-header .header-bottom .wrap-logo .img-logo {
   width: 100%;
 }
-
 header .wrap-header .header-bottom .navbar-bottom {
   display: flex;
   list-style: none;
   margin-left: 10px;
 }
-
 header .wrap-header .header-bottom .navbar-bottom li {
   color: #fff;
   padding: 17px 25px;
 }
-
 header .wrap-header .header-bottom .navbar-bottom li:hover {
   background-color: #f1f1f1;
   color: #101010;
 }
-
 header .wrap-header .header-bottom .navbar-bottom li:hover a {
   color: #101010;
 }
-
 header .wrap-header .header-bottom .navbar-bottom li a {
   text-decoration: none;
   font-size: 14px;
   color: #fff;
   height: 100%;
 }
-
 header .wrap-header .header-bottom .navbar-bottom li .fa-angle-down {
   font-size: 10px;
   color: #989898;
   margin-left: 4px;
 }
 
-header .jumbotron {
+.jumbotron {
   height: 460px;
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-image: url("../img/jumbo_backdrop.jpg");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
-
-header .jumbotron .wrap-jumbo {
+.jumbotron .wrap-jumbo {
   display: flex;
   justify-content: flex-end;
   width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
-
-header .jumbotron .wrap-jumbo .col-left {
+.jumbotron .wrap-jumbo .col-left {
   width: 45%;
   height: 100%;
   background-color: lightyellow;
   opacity: 0.5;
 }
-
-header .jumbotron .wrap-jumbo .col-right {
+.jumbotron .wrap-jumbo .col-right {
+  position: relative;
   margin-top: 20px;
-  padding: 0 20px;
-  width: 35%;
+  padding: 0 30px 0 20px;
+  width: 33%;
   height: calc(100% - 20px);
-  background-color: lightgreen;
-  opacity: 0.5;
+  background-color: #101010;
 }
-
-header .jumbotron .wrap-jumbo .col-right .btn {
-  padding: 10px 40px;
+.jumbotron .wrap-jumbo .col-right .ico-money-back {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-price {
   margin-top: 50px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-price .lbl-price {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-price .lbl-download {
+  color: #989898;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-price .btn {
+  padding: 10px 45px;
   background-color: #009cff;
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
+  display: inline-block;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-price .btn:hover {
+  background-color: #28acff;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-offer {
+  width: 100%;
+  color: #101010;
+  background-color: #e6e6e6;
+  padding: 15px;
+  margin-top: 40px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-offer h3 {
+  margin-bottom: 5px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-offer .offer-free {
+  font-size: 13px;
+}
+.jumbotron .wrap-jumbo .col-right .wrap-offer .offer-learn-more {
+  font-size: 14px;
+  color: #009cff;
+  text-decoration: none;
 }
 
 .wrap-section1 {
   width: 1200px;
   margin: 0 auto;
 }
-
 .wrap-section1 .sec1-header {
   height: 55px;
   background-color: #e6e6e6;
   width: 100%;
 }
-
 .wrap-section1 .sec1-main {
   background-color: #222222;
   background-color: red;
@@ -168,16 +187,12 @@ header .jumbotron .wrap-jumbo .col-right .btn {
 footer .wrap-footer-top {
   background-color: #e6e6e6;
 }
-
 footer .wrap-footer-top .footer-top {
   height: 300px;
 }
-
 footer .wrap-footer-bottom {
   background-color: #009cff;
 }
-
 footer .wrap-footer-bottom .footer-bottom {
   height: 90px;
 }
-

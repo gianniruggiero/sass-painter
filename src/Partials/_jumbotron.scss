@@ -1,0 +1,74 @@
+.jumbotron {
+  height: $jumbo-height;
+  // background-image:url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-image: url("../img/jumbo_backdrop.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  .wrap-jumbo {
+    display: flex;
+    justify-content: flex-end;
+    width: $wrap_width;
+    height: 100%;
+    margin: 0 auto;
+    .col-left {
+      width: $jumbo-col-left-w;
+      height: 100%;
+      background-color: lightyellow;
+      opacity: 0.5;
+    }
+    .col-right {
+      position: relative;
+      margin-top: 20px;
+      padding: 0 30px 0 20px;
+      width: $jumbo-col-right-w;
+      height: calc(100% - 20px);
+      background-color: $col-brand-1;
+      .ico-money-back {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+      }
+      .wrap-price {
+        margin-top: 50px;
+        .lbl-price {
+          color : $col-brand-5;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        .lbl-download {
+          color: $col-brand-6;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 16px;
+        }
+        .btn {
+          @include btn-def;
+        }
+        .btn:hover {
+          background-color: #28acff;
+        }
+      }
+      .wrap-offer {
+        width: 100%;
+        color: $col-brand-1;
+        background-color: #e6e6e6;
+        padding: 15px;
+        margin-top: 40px;
+        h3 {
+          margin-bottom: 5px;
+        }
+        .offer-free {
+          font-size: 13px;
+          // margin-bottom: 5px;
+        }
+        .offer-learn-more {
+          font-size: 14px;
+          color: $col-ico-btn;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

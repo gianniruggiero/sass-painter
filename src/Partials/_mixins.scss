@@ -2,3 +2,12 @@
  display: flex;
  list-style: none;
 }
+
+@mixin btn-def {
+  padding: 10px 45px;
+  background-color: $col-ico-btn;
+  color: $col-brand-5;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}

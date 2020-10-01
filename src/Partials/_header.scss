@@ -1,9 +1,5 @@
 header {
   background-color: $col-brand-1;
-  .wrap-header {
-    width: $wrap_width;
-    margin: 0 auto;
-    padding: 0 20px;
     .header-top {
       height: $header-top-height;
       background-color: $col-brand-1;
@@ -75,5 +71,4 @@ header {
         }
       }
     }
-  }
 }

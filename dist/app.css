@@ -8,15 +8,17 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-header {
-  background-color: #101010;
-}
-header .wrap-header {
-  width: 1200px;
+.container {
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
-header .wrap-header .header-top {
+
+header {
+  background-color: #101010;
+}
+header .header-top {
   height: 40px;
   background-color: #101010;
   color: #e6e6e6;
@@ -24,67 +26,67 @@ header .wrap-header .header-top {
   justify-content: flex-end;
   align-items: center;
 }
-header .wrap-header .header-top .navbar-top {
+header .header-top .navbar-top {
   display: flex;
   list-style: none;
   margin-right: 20px;
 }
-header .wrap-header .header-top .navbar-top li {
+header .header-top .navbar-top li {
   padding-left: 30px;
   line-height: 12px;
 }
-header .wrap-header .header-top .navbar-top li a {
+header .header-top .navbar-top li a {
   color: #989898;
   text-decoration: none;
   font-size: 12px;
   line-height: 12px;
 }
-header .wrap-header .header-top .navbar-top li a:hover {
+header .header-top .navbar-top li a:hover {
   text-decoration: underline;
   color: #fff;
 }
-header .wrap-header .header-top .navbar-top li .fas {
+header .header-top .navbar-top li .fas {
   color: #009cff;
   font-size: 12px;
   line-height: 12px;
   margin-right: 6px;
 }
-header .wrap-header .header-bottom {
+header .header-bottom {
   display: flex;
   align-items: center;
   height: 55px;
   width: 100%;
   background-color: #101010;
 }
-header .wrap-header .header-bottom .wrap-logo {
+header .header-bottom .wrap-logo {
   width: 90px;
 }
-header .wrap-header .header-bottom .wrap-logo .img-logo {
+header .header-bottom .wrap-logo .img-logo {
   width: 100%;
 }
-header .wrap-header .header-bottom .navbar-bottom {
+header .header-bottom .navbar-bottom {
   display: flex;
   list-style: none;
   margin-left: 10px;
 }
-header .wrap-header .header-bottom .navbar-bottom li {
+header .header-bottom .navbar-bottom li {
   color: #fff;
   padding: 17px 25px;
 }
-header .wrap-header .header-bottom .navbar-bottom li:hover {
+header .header-bottom .navbar-bottom li:hover {
   background-color: #f1f1f1;
   color: #101010;
 }
-header .wrap-header .header-bottom .navbar-bottom li:hover a {
+header .header-bottom .navbar-bottom li:hover a {
   color: #101010;
 }
-header .wrap-header .header-bottom .navbar-bottom li a {
+header .header-bottom .navbar-bottom li a {
   text-decoration: none;
   font-size: 14px;
   color: #fff;
   height: 100%;
 }
-header .wrap-header .header-bottom .navbar-bottom li .fa-angle-down {
+header .header-bottom .navbar-bottom li .fa-angle-down {
   font-size: 10px;
   color: #989898;
   margin-left: 4px;
@@ -238,20 +240,40 @@ header .wrap-header .header-bottom .navbar-bottom li .fa-angle-down {
   text-decoration: none;
 }
 
-.wrap-section1 {
-  width: 1200px;
-  margin: 0 auto;
-}
-.wrap-section1 .sec1-header {
-  height: 55px;
+main .wrap-main-nav {
   background-color: #e6e6e6;
   width: 100%;
 }
-.wrap-section1 .sec1-main {
+main .wrap-main-nav .main-nav nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .wrap-main-nav .main-nav nav .main-nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+}
+main .wrap-main-nav .main-nav nav .main-nav-list li {
+  padding: 16px 22px;
+  font-size: 18px;
+  color: #6c6c6c;
+}
+main .wrap-main-nav .main-nav nav .main-nav-list li:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+main .wrap-main-nav .main-nav nav .main-nav-list li:nth-child(1) {
+  border-bottom: 4px solid black;
+  color: black;
+  background-color: #fff;
+}
+main .sec-guide .guide-main {
   background-color: #222222;
   background-color: red;
   height: 800px;
-  width: 100%;
 }
 
 footer .wrap-footer-top {

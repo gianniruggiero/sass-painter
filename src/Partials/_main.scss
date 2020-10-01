@@ -53,10 +53,11 @@ main {
       }
       &-text {
         display: inline-block;
-        width: 970px;
+        width: 85%;
         color: $col-brand-5;
         margin-bottom: 30px;
         font-size: 19px;
+        line-height: 28px;
         font-weight: 500;
       }
       .wrap-pdf {
@@ -80,12 +81,11 @@ main {
             cursor: pointer;
           }
         }
-
       }
       .guide-image {
         font-size: 0px;
         margin: 0 auto;
-        width: 1050px;
+        width: $img_big_width;
         position: absolute;
         left: 50%;
         top: 100%;
@@ -107,9 +107,7 @@ main {
           top: 50%;
           transform: translate(-50%, -20%);
         }
-
       }
-      // height: 800px;
     }
   }
 

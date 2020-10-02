@@ -451,7 +451,7 @@ main .sec-guide .guide-main .guide-image .play-ico {
 .sec-tools .canvas-main .canvas-image {
   font-size: 0px;
   width: 65%;
-  text-align: center;
+  text-align: right;
 }
 .sec-tools .canvas-main .canvas-image .canvas-img {
   max-width: 670px;
@@ -482,7 +482,7 @@ main .sec-guide .guide-main .guide-image .play-ico {
 .sec-tools .brush-main .brush-image {
   font-size: 0px;
   width: 65%;
-  text-align: center;
+  text-align: left;
 }
 .sec-tools .brush-main .brush-image .brush-img {
   max-width: 670px;
@@ -501,21 +501,69 @@ footer .wrap-footer-top .footer-top nav {
   height: 100%;
 }
 footer .wrap-footer-top .footer-top nav h5 {
-  color: #101010;
-  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 300;
 }
 footer .wrap-footer-top .footer-top nav ul li {
-  padding: 4px 0px;
+  padding: 3px 0px;
   list-style: none;
+}
+footer .wrap-footer-top .footer-top nav ul li ul {
+  display: flex;
+  list-style: none;
+  padding-top: 25px;
+}
+footer .wrap-footer-top .footer-top nav ul li ul li {
+  padding-right: 10px;
+  height: 50px;
+}
+footer .wrap-footer-top .footer-top nav ul li ul li img {
+  width: 35px;
 }
 footer .wrap-footer-top .footer-top nav ul li a {
   text-decoration: none;
   font-size: 12px;
   color: #222222;
 }
+footer .wrap-footer-top .footer-top nav ul li a:hover {
+  text-decoration: underline;
+}
 footer .wrap-footer-bottom {
   background-color: #222222;
 }
 footer .wrap-footer-bottom .footer-bottom {
   height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-list li {
+  margin: 0 15px;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-privacy {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-privacy li {
+  margin-right: 20px;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-privacy li:nth-child(4) a {
+  color: #fff;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-privacy li a {
+  color: #989898;
+  font-size: 12px;
+  text-decoration: none;
+}
+footer .wrap-footer-bottom .footer-bottom .adv-privacy li a:hover {
+  text-decoration: underline;
 }

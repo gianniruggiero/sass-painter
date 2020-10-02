@@ -9,17 +9,34 @@ footer {
         width: calc(100% / 4);
         height: 100%;
         h5 {
-          color: $col-brand-1;
-          margin-bottom: 10px;
+          font-size: 16px;
+          color: #000;
+          margin-bottom: 5px;
+          font-weight: 300;
         }
         ul {
           li {
-          padding: 4px 0px;
+          padding: 3px 0px;
           list-style: none;
+          ul {
+            @include listInLine;
+            padding-top: 25px;
+            li {
+              padding-right: 10px;
+              height: 50px;
+              img {
+                width: 35px;
+              }
+            }
+
+          }
           a {
             text-decoration: none;
             font-size: 12px;
             color: $col-brand-2;
+            &:hover {
+              text-decoration: underline;
+            }
           }
 
           }
@@ -31,6 +48,39 @@ footer {
     background-color: $col-brand-2;
     .footer-bottom {
       height: $footer-bottom-height;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .adv-list {
+        @include listInLine;
+        justify-content: flex-end;
+        li {
+          margin: 0 15px;
+
+        }
+      }
+      .adv-privacy {
+        @include listInLine;
+        justify-content: flex-end;
+        align-items: center;
+        li {
+          margin-right: 20px;
+          &:nth-child(4) a {
+              color: $col-brand-5;
+          }
+          a {
+            color: $col-brand-6;
+            font-size: 12px;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+
+          }
+        }
+      }
+
+
     }
   }
 

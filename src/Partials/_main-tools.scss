@@ -58,7 +58,7 @@
     .canvas-image {
       font-size: 0px;
       width: 65%;
-      text-align: center;
+      text-align: right;
       .canvas-img {
         max-width: $img_small_width;
         // height: 100%;
@@ -92,7 +92,7 @@
     .brush-image {
       font-size: 0px;
       width: 65%;
-      text-align: center;
+      text-align: left;
       .brush-img {
         max-width: $img_small_width;
         // height: 100%;
